@@ -1,58 +1,47 @@
-# Cube³
+# Cube³ Solver
 
 > **[🚀 Live Demo — Try it now in your browser](https://iamthoufic.github.io/cube-3/)**
 
-A 3×3 cube solver that runs entirely in your browser. Tell it what your scrambled cube looks like and it walks you back to solved, one turn at a time, with arrows on a live 3D cube.
+An interactive 3×3 Rubik's cube solver that runs entirely in the browser. Paint your cube's colors (or shuffle a random one), then follow a move-by-move solution on a live 3D cube with arrows and plain-language guidance.
 
-You don't need to know any cube notation to use it. And if you do, you can switch the arrows off and read the moves like a cuber.
+No account, no server, no tracking. Everything stays on your device.
 
-The interactive interface lives in [`index.html`](index.html) — open it locally or use the live demo above.
+## Features
 
-## What you can do with it
-
-- **Solve your own cube.** Paint your cube's colors onto an unfolded net (or tap stickers straight on the 3D cube), press Solve, and follow along.
-- **Practice on a random shuffle.** One click scrambles the cube with 25 random turns. The solution is worked out while the cube is still scrambling, so it's ready the moment it stops.
-- **Choose how you're guided.** Arrows and plain words ("turn the right face clockwise") for beginners, standard notation (R, U′, F2) for cubers, or both at once.
-- **Choose how it solves.**
-  - *Fewest turns* uses Kociemba's two-phase algorithm. In our tests it averages about 21 moves.
-  - *Layer by layer* follows the beginner method most people learn first: white cross, white corners, middle layer, then the top. It's much longer (usually 100 to 180 moves), but it names each stage as you go, so you can actually learn from it.
-- **Go at your own pace.** Step forward and back, autoplay at up to 3× speed, orbit and zoom the cube, and keep an eye on your move count and time.
-- **Keep going.** When a solve finishes, jump straight into entering the colors of the next cube you're holding, shuffle a new random one, or open your history.
-- **Look back.** Finished solves land in a history panel where you can replay them.
-- **Make it yours.** Light, dark or system theme, and custom sticker colors if your cube isn't the standard scheme.
-- **Private by design.** No server, no account, no tracking. Nothing you enter leaves your device, and history lasts only for the current session.
+- **Solve your own cube** — paint colors on an unfolded net or tap stickers on the 3D cube
+- **Random scramble** — 25 random turns; solution is computed while scrambling finishes
+- **Two solvers**
+  - *Fewest turns* — Kociemba two-phase algorithm (~21 moves average)
+  - *Layer by layer* — beginner method with named stages (100–180 moves)
+- **Guidance modes** — arrows + words, standard notation (R, U′, F2), or both
+- **Playback controls** — step, autoplay (up to 3×), orbit/zoom the cube
+- **History** — finished solves are kept for the session so you can replay
+- **Themes & colors** — light / dark / system, plus custom sticker colors
+- **Single-file build** — `npm run build` produces one self-contained HTML file
 
 ## Quick start
 
-There's no build step and nothing to install.
-
-**Just open it.** Clone or download the repo and double-click `index.html`. Everything works straight from disk, including the background solver.
-
-**Or run the little dev server** (needs Node 18 or newer):
+No install required for the basic experience.
 
 ```bash
-git clone https://github.com/iamthoufic/cube-3.git
-cd cube-3
-npm start
+# open index.html directly, or:
+npm start          # serves at http://localhost:8080
+npm test           # run solver tests
+npm run build      # write dist/cube3-solver.html
 ```
 
-Then open [http://localhost:8080](http://localhost:8080). Want another port? `PORT=3000 npm start`.
+Node 18+ is needed only for the scripts above.
 
-**Or make a single file.** `npm run build` writes `dist/cube3-solver.html`, one self-contained file with the font, three.js and all the code inlined. Handy for sharing or keeping offline.
+## GitHub Pages
 
-## Putting it online with GitHub Pages
+1. Push to GitHub
+2. Settings → Pages → Deploy from branch → `main` / `(root)`
+3. Live at `https://<user>.github.io/cube-3/`
 
-It's a static site, so there's nothing to build first.
-
-1. Push the repo to GitHub.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, and save.
-4. A minute later it's live at `https://iamthoufic.github.io/cube-3/`.
-
-The repo includes an empty `.nojekyll` file so Pages serves every file exactly as it is.
+The empty `.nojekyll` file ensures every asset is served as-is.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
 
 Rubik's Cube is a trademark of its respective owner. This project is not affiliated with or endorsed by them.
