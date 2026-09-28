@@ -1,0 +1,15 @@
+# dependencies (none are needed, but just in case)
+node_modules/
+
+# build output from `npm run build`
+dist/
+
+# logs
+*.log
+npm-debug.log*
+
+# editors and OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

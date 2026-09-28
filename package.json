@@ -1,0 +1,24 @@
+{
+  "name": "cube3-solver",
+  "version": "1.1.0",
+  "description": "An interactive 3x3 cube solver that runs entirely in the browser. Enter your cube's colors or shuffle one, then follow a move-by-move solution on a 3D cube.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/solver.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "rubiks-cube",
+    "cube-solver",
+    "kociemba",
+    "two-phase",
+    "threejs",
+    "webgl"
+  ],
+  "license": "MIT"
+}
