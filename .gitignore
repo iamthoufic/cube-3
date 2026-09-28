@@ -8,8 +8,13 @@ dist/
 *.log
 npm-debug.log*
 
-# editors and OS clutter
-.vscode/
-.idea/
+# editors and OS
 .DS_Store
-Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# local env
+.env
+.env.*
