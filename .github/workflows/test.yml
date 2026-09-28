@@ -9,27 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Solver tests
-        run: |
-          if [ -f tests/solver.test.mjs ] && [ -f js/solver/optimal.js ] && [ -s js/solver/core.js ] && [ $(wc -c < js/solver/core.js) -gt 10000 ]; then
-            npm test
-          else
-            echo "Solver source incomplete (full core.js / optimal.js still needed) — skipping tests for now."
-            echo "Copy the remaining files from the original cube3-solver.zip into this repo to enable full CI."
-            exit 0
-          fi
-
+        run: npm test
       - name: Single-file build
-        continue-on-error: true
-        run: |
-          if [ -f scripts/build.mjs ] && [ -f index.html ] && [ -f css/style.css ]; then
-            npm run build
-          else
-            echo "Build assets incomplete — skipping single-file build."
-            exit 0
-          fi
+        run: npm run build
