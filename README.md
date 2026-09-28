@@ -1,6 +1,6 @@
 # Cube³ Solver
 
-> **[🚀 Live Demo - Try it now in your browser](https://iamthoufic.github.io/cube-3/)**
+> **[ Live Demo - Try it now in your browser](https://iamthoufic.github.io/cube-3/)**
 
 An interactive 3×3 Rubik's cube solver that runs entirely in the browser. Paint your cube's colors (or shuffle a random one), then follow a move-by-move solution on a live 3D cube with arrows and plain-language guidance.
 
