@@ -1,6 +1,6 @@
 # Cube³ Solver
 
-> **[ Live Demo - Try it now in your browser][(https://vercel.com/iamthoufic/cube3-solver](https://3x3-rubiks-cube-solver.vercel.app/)]**
+> **[Live Demo - Try it now in your browser](https://3x3-rubiks-cube-solver.vercel.app/)**
 
 An interactive 3×3 Rubik's cube solver that runs entirely in the browser. Paint your cube's colors (or shuffle a random one), then follow a move-by-move solution on a live 3D cube with arrows and plain-language guidance.
 
