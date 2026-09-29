@@ -6,13 +6,6 @@ An interactive 3×3 Rubik's cube solver that runs entirely in the browser. Paint
 
 No account, no server, no tracking. Everything stays on your device.
 
-![Cube³ guiding a solve](docs/solving.jpg)
-
-<p align="center">
-  <img src="docs/welcome.jpg" width="49%" alt="Welcome screen">
-  <img src="docs/enter-colors.jpg" width="49%" alt="Entering a cube's colors on the unfolded net">
-</p>
-
 ## Features
 
 - **Solve your own cube** — paint colors on an unfolded net or tap stickers on the 3D cube
